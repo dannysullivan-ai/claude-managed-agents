@@ -1,0 +1,118 @@
+{
+  "notice": "Fictional workshop fixtures, not researched venues or live quotes. USD only. All meal packages include vegetarian options. No bookings.",
+  "cities": {
+    "Chicago": [
+      {
+        "name": "Chicago Studio A (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 700,
+        "capacity": 24
+      },
+      {
+        "name": "Chicago Studio B (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 450,
+        "capacity": 16
+      },
+      {
+        "name": "Chicago Table A (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 85,
+        "vegetarian": true
+      },
+      {
+        "name": "Chicago Table B (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 55,
+        "vegetarian": true
+      },
+      {
+        "name": "Chicago Design Walk (fictional)",
+        "kind": "activity",
+        "unit": "per_person",
+        "costUsd": 25,
+        "rainAlternative": "Indoor collaborative design challenge in the selected workshop room; same allowance."
+      }
+    ],
+    "New York": [
+      {
+        "name": "New York Studio A (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 840,
+        "capacity": 24
+      },
+      {
+        "name": "New York Studio B (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 540,
+        "capacity": 16
+      },
+      {
+        "name": "New York Table A (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 102,
+        "vegetarian": true
+      },
+      {
+        "name": "New York Table B (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 66,
+        "vegetarian": true
+      },
+      {
+        "name": "New York Design Walk (fictional)",
+        "kind": "activity",
+        "unit": "per_person",
+        "costUsd": 25,
+        "rainAlternative": "Indoor collaborative design challenge in the selected workshop room; same allowance."
+      }
+    ],
+    "San Francisco": [
+      {
+        "name": "San Francisco Studio A (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 805,
+        "capacity": 24
+      },
+      {
+        "name": "San Francisco Studio B (fictional)",
+        "kind": "room",
+        "unit": "per_day",
+        "costUsd": 518,
+        "capacity": 16
+      },
+      {
+        "name": "San Francisco Table A (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 98,
+        "vegetarian": true
+      },
+      {
+        "name": "San Francisco Table B (fictional)",
+        "kind": "meals",
+        "unit": "per_person_per_day",
+        "costUsd": 63,
+        "vegetarian": true
+      },
+      {
+        "name": "San Francisco Design Walk (fictional)",
+        "kind": "activity",
+        "unit": "per_person",
+        "costUsd": 25,
+        "rainAlternative": "Indoor collaborative design challenge in the selected workshop room; same allowance."
+      }
+    ]
+  },
+  "transportPerDayUsd": 120,
+  "contingencyRate": 0.1
+}

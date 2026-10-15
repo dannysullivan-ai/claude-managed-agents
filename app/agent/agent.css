@@ -1,0 +1,89 @@
+.managed-app { height: 100dvh; min-height: 400px; display: flex; flex-direction: column; overflow: hidden; }
+.managed-app .site-header { flex-shrink: 0; }
+.managed-navigation { display: flex; align-items: center; gap: 24px; font-size: 12px; color: var(--muted); }
+.managed-navigation a:hover { color: var(--text); }
+.managed-session-bar { flex-shrink: 0; min-height: 48px; display: flex; align-items: center; gap: 18px; padding: 10px 28px; border-bottom: 1px solid var(--border); background: var(--panel); font-size: 11px; }
+.managed-mode { display: flex; align-items: center; gap: 7px; color: var(--soft); white-space: nowrap; }
+.managed-product-brand { color: var(--text); }
+.managed-product-brand strong { font-size: 15px; font-weight: 600; letter-spacing: -.5px; }
+.managed-product-brand > svg { color: var(--accent); }
+.managed-session-id { display: flex; align-items: center; gap: 7px; min-width: 0; color: var(--muted); }
+.managed-session-id code { font-size: 11px; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; user-select: all; color: var(--soft); }
+.managed-status { margin-left: auto; color: var(--accent); white-space: nowrap; }
+.managed-session-actions { display: flex; gap: 16px; align-items: center; }
+.managed-session-actions button { display: flex; gap: 6px; align-items: center; padding: 4px 0; border: 0; background: transparent; font-size: 11px; color: var(--soft); white-space: nowrap; }
+.managed-session-actions button:hover { color: var(--accent); }
+.managed-app .workspace { flex: 1; height: auto; min-height: 0; width: 100%; }
+.managed-app .workspace.starting { min-height: 0; align-items: safe center; padding: 32px 24px 50px; overflow-y: auto; }
+.managed-app .welcome > .eyebrow { margin-bottom: 18px; color: var(--accent); }
+.managed-app .welcome .sample-note { font-size: 12px; max-width: 530px; }
+.managed-app .mobile-tabs { flex-shrink: 0; }
+.managed-app .chat-panel-header { flex-shrink: 0; }
+.managed-app .chat-bottom { max-height: 65%; overflow-y: auto; }
+.managed-app .starting .chat-bottom { max-height: none; overflow: visible; }
+.managed-city-note { font-size: 11px; color: var(--muted); }
+.managed-waiting, .managed-revising { display: flex; align-items: center; gap: 9px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.managed-revising { margin: -12px 0 26px; }
+.managed-pending { opacity: .72; }
+.managed-pending small { display: block; margin-top: 9px; font-size: 10px; line-height: 1.5; color: var(--muted); }
+.managed-output-note { font-size: 12px; line-height: 1.7; color: var(--muted); }
+.managed-activity { margin-bottom: 12px; }
+.managed-activity summary { cursor: pointer; color: var(--muted); font-size: 11px; padding: 6px 0; }
+.managed-activity summary span { margin-left: 6px; color: var(--accent); }
+.managed-activity .activity-list { max-height: 112px; }
+.managed-error-actions { display: flex; flex-wrap: wrap; gap: 16px; }
+.managed-feedback { padding: 16px; margin-bottom: 14px; border: 1px solid #e0c6ac; border-radius: 10px; background: #fcf5ed; color: #60432e; }
+.managed-feedback.is-guidance { background: var(--panel); border-color: var(--border); color: var(--text); }
+.managed-feedback h3 { font-size: 14px; line-height: 1.5; margin: 0 0 6px; font-weight: 600; }
+.managed-feedback p { font-size: 12px; line-height: 1.65; margin: 0; }
+.managed-feedback p + p { margin-top: 8px; }
+.managed-feedback .managed-feedback-context { color: var(--muted); font-size: 11px; margin-top: 10px; }
+.managed-feedback-command { display: block; font-size: 11px; overflow-wrap: anywhere; background: var(--bg); border: 1px solid var(--border); padding: 8px 10px; border-radius: 6px; margin-top: 12px; user-select: all; }
+.managed-feedback button, .managed-lab-link { display: flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--accent); font-size: 12px; padding: 12px 0 0; text-align: left; line-height: 1.5; }
+.managed-feedback .managed-error-actions:empty { display: none; }
+.managed-lab-link { margin: 4px 0 12px; }
+.managed-app .message-markdown pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; background: var(--raised); border-radius: 8px; font-size: 12px; }
+.managed-app .message-markdown code { overflow-wrap: anywhere; font-size: .9em; }
+.managed-embedded .managed-session-bar { padding: 9px 18px; gap: 12px; }
+.managed-embedded .site-header { display: none; }
+.managed-embedded .workspace.starting { padding: 28px; }
+.managed-embedded .welcome h2 { font-size: clamp(27px, 3.2vw, 38px); }
+.managed-embedded .welcome { padding-bottom: 22px; }
+.managed-embedded .welcome > p { margin-top: 12px; }
+.managed-embedded .chat-panel-header { padding-top: 18px; padding-bottom: 18px; }
+
+@media (max-width: 1000px) {
+  .managed-session-id code { max-width: 180px; }
+  .managed-session-bar { gap: 12px; padding-right: 20px; padding-left: 20px; }
+  .managed-session-actions { gap: 12px; }
+}
+@media (max-width: 800px) {
+  .managed-app { min-height: 400px; }
+  .managed-app .workspace { min-height: 0; }
+  .managed-app .workspace.starting { min-height: 0; align-items: flex-start; padding: 42px 24px 30px; }
+  .managed-app .chat-panel, .managed-app .itinerary-panel { height: 100%; }
+  .managed-app .starting .chat-panel { height: auto; }
+  .managed-app .chat-bottom { max-height: 60%; }
+  .managed-session-bar { flex-wrap: wrap; gap: 8px 14px; padding: 10px 20px; }
+  .managed-session-id { order: 3; flex: 1 0 100%; }
+  .managed-session-id code { max-width: calc(100vw - 105px); }
+  .managed-status { margin-left: auto; }
+  .managed-session-actions button { min-height: 24px; }
+  .managed-navigation { gap: 14px; font-size: 11px; }
+  .managed-embedded .workspace.starting { padding: 24px 22px; }
+}
+@media (max-width: 420px) {
+  .managed-mode { font-size: 10px; }
+  .managed-session-actions { gap: 10px; }
+  .managed-session-actions button { font-size: 10px; }
+  .managed-status { font-size: 10px; }
+  .managed-session-bar { gap: 8px; }
+  .managed-navigation a:last-child { display: none; }
+}
+
+.managed-loading { flex: 1; min-height: 0; display: grid; place-items: center; padding: 32px 24px; text-align: center; }
+.managed-loading > div { max-width: 420px; }
+.managed-loading svg { color: var(--accent); margin-bottom: 16px; }
+.managed-loading h2 { font-size: 22px; line-height: 1.4; margin-bottom: 12px; }
+.managed-loading p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+.managed-restored { flex-shrink: 0; padding: 10px 20px; border-bottom: 1px solid var(--border); background: var(--panel); color: var(--soft); font-size: 12px; line-height: 1.6; }
